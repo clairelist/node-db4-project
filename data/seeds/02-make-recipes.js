@@ -23,7 +23,7 @@ const step_ingredients = [
     //uhh the salmon DELIGHT
     {step_id: 1, ingredient_id: 4, quantity: 1},
     {step_id: 2, ingredient_id: 3, quanity: 0.8},
-    {step_id: 2, ingredient_id: 5, quantity: 78}
+    {step_id: 2, ingredient_id: 5, quantity: 78},
 
     //uh too, used too much DELIGHT! time for TERROR!
     {step_id: 1, ingredient_id: 4, quantity: 1},
@@ -47,3 +47,10 @@ const steps = [
     { step_text: 'Do the needful to the salmon.', step_number: 2, recipe_id: 3 },
     { step_text: 'TERROR! At your creation!!', step_number: 3, recipe_id: 3},
 ]
+
+exports.seed = async function(knex){
+    await knex('recipes').insert(recipes);
+    await knex('ingredients').insert(ingredients);
+    await knex('steps').insert(steps);
+    await knex('step_ingredients').insert(step_ingredients);
+}
