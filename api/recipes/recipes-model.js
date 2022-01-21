@@ -1,8 +1,11 @@
 //what do I have to do?
-const lego = require('knex');
+//WRAP IT UP !
+const db = require('../../data/db-config.js');
 
 async function getRecipeById(recipe_id){
-    return Promise.resolve(`recipe with id ${recipe_id} found!`)
+    const rowes = await db('recipes as r')
+        .where('recipe_id',recipe_id);
+    return rowes;
 }
 
 module.exports = {

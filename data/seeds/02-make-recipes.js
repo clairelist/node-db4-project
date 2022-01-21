@@ -22,30 +22,30 @@ const step_ingredients = [
 
     //uhh the salmon DELIGHT
     {step_id: 1, ingredient_id: 4, quantity: 1},
-    {step_id: 2, ingredient_id: 3, quanity: 0.8},
+    {step_id: 2, ingredient_id: 3, quantity: 0.8},
     {step_id: 2, ingredient_id: 5, quantity: 78},
 
     //uh too, used too much DELIGHT! time for TERROR!
     {step_id: 1, ingredient_id: 4, quantity: 1},
-    {step_id: 2, ingredient_id: 3, quanity: 0.8},
+    {step_id: 2, ingredient_id: 3, quantity: 0.8},
     {step_id: 2, ingredient_id: 4, quantity: 666}
 ]
 
 const steps = [
     //Brocooli zest !
-    { step_text: 'cut your brocolli and get ready', step_number: 1, recipe_id : 1 },
-    { step_text: 'Do the needful to the brocoolii', step_number: 2, recipe_id: 1 },
-    { step_text: 'Just cook it you nerd!!', step_number: 3, recipe_id: 1},
+    { step_instructions: 'cut your brocolli and get ready', step_number: 1, recipe_id : 1 },
+    { step_instructions: 'Do the needful to the brocoolii', step_number: 2, recipe_id: 1 },
+    { step_instructions: 'Just cook it you nerd!!', step_number: 3, recipe_id: 1},
 
     //Lemon Salmon DELIGHT!
-    { step_text: 'cut your SALMON and get ready', step_number: 1, recipe_id : 2 },
-    { step_text: 'Do the needful to the salmon', step_number: 2, recipe_id: 2 },
-    { step_text: 'DELIGHT at your creation!', step_number: 3, recipe_id: 2},
+    { step_instructions: 'cut your SALMON and get ready', step_number: 1, recipe_id : 2 },
+    { step_instructions: 'Do the needful to the salmon', step_number: 2, recipe_id: 2 },
+    { step_instructions: 'DELIGHT at your creation!', step_number: 3, recipe_id: 2},
 
     //Lemon Salmon TERROR!
-    { step_text: 'cut your SALMNNRN and get ready dweeb.', step_number: 1, recipe_id : 3 },
-    { step_text: 'Do the needful to the salmon.', step_number: 2, recipe_id: 3 },
-    { step_text: 'TERROR! At your creation!!', step_number: 3, recipe_id: 3},
+    { step_instructions: 'cut your SALMNNRN and get ready dweeb.', step_number: 1, recipe_id : 3 },
+    { step_instructions: 'Do the needful to the salmon.', step_number: 2, recipe_id: 3 },
+    { step_instructions: 'TERROR! At your creation!!', step_number: 3, recipe_id: 3},
 ]
 
 exports.seed = async function(knex){
